@@ -9,6 +9,11 @@
           {% endif %}
         {% endfor %}
       </ul>
+      <!-- Search form -->
+      <form method="get" action="/search" data-search-form>
+        <input type="search" required="" name="q" id="q" placeholder="Buscar" data-search-input />
+        <input type="submit" value="Buscar" />
+      </form>
     </nav>
   </div>
 </header>

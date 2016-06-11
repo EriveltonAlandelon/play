@@ -4,7 +4,7 @@ title:  "Jonas Blue - Fast Car ft. Dakota"
 date:   2016-05-26 12:30:43 -0300
 categories: teste
 video-url: https://www.youtube.com/watch?v=5yXQJBU8A28
-video-id: 5yXQJBU8A28
+video_id: 5yXQJBU8A28
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

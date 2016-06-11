@@ -4,7 +4,7 @@ title:  "Benny Benassi & Chris Brown - Paradise (Official Video)"
 date:   2016-05-29 07:30:43 -0300
 categories: teste
 video-url: https://www.youtube.com/watch?v=2_wpOmM1d8w
-video-id: 2_wpOmM1d8w
+video_id: 2_wpOmM1d8w
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

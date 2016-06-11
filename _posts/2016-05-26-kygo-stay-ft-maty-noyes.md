@@ -4,7 +4,7 @@ title:  "Kygo - Stay ft. Maty Noyes"
 date:   2016-05-26 13:30:43 -0300
 categories: teste
 video-url: https://www.youtube.com/watch?v=z9porfO8C_Q
-video-id: z9porfO8C_Q
+video_id: z9porfO8C_Q
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
