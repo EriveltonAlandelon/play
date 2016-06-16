@@ -1,11 +1,11 @@
 <header>
   <div class="container">
-    <a class="titulo" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="titulo" href="{{ site.baseurl }}/" onclick="clicksound.playclip()">{{ site.title }}</a>
     <nav>
       <ul>
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+          <li><a href="{{ my_page.url | prepend: site.baseurl }}" onclick="clicksound.playclip()">{{ my_page.title }}</a></li>
           {% endif %}
         {% endfor %}
       </ul>
