@@ -29,13 +29,12 @@
         {{ content }}
     </main>
     {% include footer.html %}
-  <script src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
-  <script src="{{ "/js/echo.min.js" | prepend: site.baseurl }}"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/1.3.0/turbolinks.min.js"></script>
+  <script async defer src="https://cdn.jsdelivr.net/jquery/2.2.4/jquery.min.js"></script>
+  <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  <script async defer src="{{ "/js/echo.min.js" | prepend: site.baseurl }}"></script>
+  <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/1.3.0/turbolinks.min.js"></script>
   <!-- Search script - Must appear after template -->
-  <script src="/scripts/search.js"></script>
+  <script async defer src="/scripts/search.js"></script>
   <script type="text/javascript">
     $(document).on('page:fetch', function() {
       NProgress.start();
@@ -46,28 +45,6 @@
     $(document).on('page:restore', function() {
       NProgress.remove();
     });
-  </script>
-  <script type="text/javascript">
-  $(document).ready(function(){
-
-      /* default settings */
-      $('.venobox').venobox(); 
-
-
-      /* custom settings */
-      $('.venobox_custom').venobox({
-          framewidth: '400px',        // default: ''
-          frameheight: '300px',       // default: ''
-          border: '10px',             // default: '0'
-          bgcolor: '#5dff5e',         // default: '#fff'
-          titleattr: 'data-title',    // default: 'title'
-          numeratio: true,            // default: false
-          infinigall: true            // default: false
-      });
-
-      /* auto-open #firstlink on page load */
-      $("#firstlink").venobox().trigger('click');
-  });
   </script>
   <script>
   echo.init({
