@@ -31,7 +31,7 @@ header a.logo:hover{
     filter: brightness(90%);
 }
 header a.logo span{
-	margin-top: 1px;
+	margin-top: 2px;
 	margin-left: 7px;
 	color: #ededed;
 	font-size: 29px;
