@@ -1,10 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
 *{
 	padding: 0;
 	margin: 0;
 }
 body{
-	font-family: 'Arial';
+	font-family: 'Lato', sans-serif;
 	background: #FDFDFD;
+	font-size: 14px;
 }
 .container{
 	max-width: 950px;
@@ -29,7 +31,7 @@ header a.logo:hover{
     filter: brightness(90%);
 }
 header a.logo span{
-	margin-top: 5px;
+	margin-top: 1px;
 	margin-left: 7px;
 	color: #ededed;
 	font-size: 29px;
