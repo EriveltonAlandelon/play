@@ -17,6 +17,7 @@ header{
 	width: 100%;
 	background: linear-gradient(to right, #9D50BB , #6E48AA), url(../img/header-border.png) repeat-x;
 	float: left;
+	margin-bottom: 7px;
 }
 header a.logo{
 	text-decoration: none;
@@ -102,6 +103,7 @@ main{
 main .mais-recente{
 	width: 100%;
 	float: left;
+	margin-bottom: 20px;
 }
 main .row .c6{
 	width: 48%;
@@ -140,6 +142,12 @@ main .categorias{
 	width: 100%;
 	background: #FDFDFD;
 	float: left;
+	margin-bottom: 20px;
+}
+main .categorias h1{
+	color: #0077D3;
+	margin-bottom: 5px;
+	border-bottom: 2px solid;
 }
 main .row .c3{
 	width: 23%;
