@@ -3,6 +3,79 @@
 	padding: 0;
 	margin: 0;
 }
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #16a085;
+
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 5px;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #16a085, 0 0 5px #16a085;
+  opacity: 1.0;
+
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+      -ms-transform: rotate(3deg) translate(0px, -4px);
+          transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: none;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+
+  border: solid 2px transparent;
+  border-top-color: #29d;
+  border-left-color: #29d;
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+          animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0%   { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes nprogress-spinner {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 body{
 	font-family: 'Lato', sans-serif;
 	background: #FDFDFD;
@@ -17,11 +90,10 @@ header{
 	width: 100%;
 	background: linear-gradient(to right, #9D50BB , #6E48AA), url(../img/header-border.png) repeat-x;
 	float: left;
-	margin-bottom: 7px;
 }
 header a.logo{
 	text-decoration: none;
-	padding: 15px 10px;
+	padding: 18px 10px;
 	color: #ededed;
 	float: left;
 	-ms-transition: .5s;
@@ -35,7 +107,7 @@ header a.logo span{
 	margin-top: 2px;
 	margin-left: 7px;
 	color: #ededed;
-	font-size: 29px;
+	font-size: 25px;
 	font-weight: bold;
 	float: right;
 }
@@ -91,6 +163,7 @@ header nav form input[type="submit"]{
 	width: 100%;
 	text-align: center;
 	background: #000;
+	float: left;
 }
 .video-container iframe{
 	max-width: 1024px;
@@ -103,6 +176,7 @@ main{
 main .mais-recente{
 	width: 100%;
 	float: left;
+	margin-top: 7px;
 	margin-bottom: 20px;
 }
 main .row .c6{
