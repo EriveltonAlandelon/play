@@ -58,5 +58,41 @@
 
   // echo.render(); is also available for non-scroll callbacks
   </script>
+  <script src="{{ "/js/jquery.translate.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript">
+    var dict = {
+      "Sobre": {
+        pt_br: "Sobre",
+        en: "About"
+      },
+      "Contato": {
+        pt_br: "Contato",
+        en: "Contact"
+      },
+      "Buscar": {
+        pt_br: "Buscar",
+        en: "Search"
+      }
+    }
+  </script>
+  <script>
+    if(navigator.browserLanguage) {  
+    var idioma = navigator.browserLanguage;    
+    }
+    else if(navigator.language) {
+    var idioma = navigator.language;
+    }
+    if(idioma == "pt-BR"){
+      var translator = $('body').translate({lang: "en", t: dict}); //use English
+    }
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+        $(this).toggleClass('fechar');
+        $('nav').slideToggle(100);
+      });
+    });
+  </script>
   </body>
 </html>
