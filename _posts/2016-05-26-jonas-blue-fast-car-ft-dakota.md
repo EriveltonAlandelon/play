@@ -2,7 +2,7 @@
 layout: post
 title:  "Jonas Blue - Fast Car ft. Dakota"
 date:   2016-05-26 12:30:43 -0300
-categories: teste
+categories: teste jonas blue dakota
 video-url: https://www.youtube.com/watch?v=5yXQJBU8A28
 video_id: 5yXQJBU8A28
 ---

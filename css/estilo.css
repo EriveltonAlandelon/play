@@ -93,6 +93,12 @@ header{
 }
 header .logo{
 	float: left;
+	-ms-transition: .5s;
+  	transition: .5s;
+}
+header .logo:hover{
+	-webkit-filter: brightness(90%);
+    filter: brightness(90%);
 }
 header .logo a{
 	float: left;
@@ -143,7 +149,7 @@ header a.logo span{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #fff;
+  background: #ededed;
   border-radius: 3px;
   opacity: 1;
   left: 0;
@@ -391,14 +397,14 @@ footer p{
 	header nav ul{
 		list-style: none;
 		float: none;
-		margin-right: 10px;
+		margin-right: 0px;
 		text-align: center;
 	}
 	header nav ul li{
 		display: block;
 	}
 	header nav ul li a{
-		padding: 28px 10px;
+		padding: 18px 0px;
 		text-decoration: none;
 		color: rgba(255, 255, 255, 0.5);
 		float: none;
@@ -410,6 +416,7 @@ footer p{
 	header nav form{
 		float: none;
 		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 	header nav form input[type="search"]{
 		background: #8a44d5;
