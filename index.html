@@ -5,7 +5,7 @@ layout: default
 <section class="mais-recente">
   <div class="container">
     <div class="row">
-      {% for post in site.posts limit:2 %}
+      {% for post in site.posts limit:3 %}
         <div class="c6">
           <a href="{{ site.baseurl }}{{ post.url }}">
             <figure>
@@ -18,7 +18,24 @@ layout: default
     </div>
   </div>
 </section>
-<section class="categorias">
+<section class="videos">
+  <div class="container">
+    <h1>House</h1>
+    <div class="row">
+      {% for post in site.tags['teste'] limit:4 %}
+      <div class="c3">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <figure>
+            <img src="{{ "/img/loading.jpg" | prepend: site.baseurl }}" data-echo="http://img.youtube.com/vi/{{ post.video_id }}/mqdefault.jpg">
+            <figcaption>{{ post.title }}</figcaption>
+          </figure>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="videos">
   <div class="container">
     <h1>House</h1>
     <div class="row">
@@ -35,7 +52,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="categorias">
+<section class="videos">
   <div class="container">
     <h1>House</h1>
     <div class="row">
@@ -52,7 +69,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="categorias">
+<section class="videos">
   <div class="container">
     <h1>House</h1>
     <div class="row">
@@ -69,7 +86,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="categorias">
+<section class="videos">
   <div class="container">
     <h1>House</h1>
     <div class="row">
@@ -86,7 +103,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="categorias">
+<section class="videos">
   <div class="container">
     <h1>House</h1>
     <div class="row">
@@ -103,24 +120,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="categorias">
-  <div class="container">
-    <h1>House</h1>
-    <div class="row">
-      {% for post in site.categories['teste'] limit:4 %}
-      <div class="c3">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <figure>
-            <img src="{{ "/img/loading.jpg" | prepend: site.baseurl }}" data-echo="http://img.youtube.com/vi/{{ post.video_id }}/mqdefault.jpg">
-            <figcaption>{{ post.title }}</figcaption>
-          </figure>
-        </a>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-<section class="categorias">
+<section class="videos">
   <div class="container">
     <h1>House</h1>
     <div class="row">

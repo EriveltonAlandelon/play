@@ -9,6 +9,7 @@ layout: null
             {% if item.title != null and item.title != empty %}
             {% unless first %},{% endunless %}{
                 "title": {{item.title | jsonify}},
+                "tags": "{{ item.tags }}",
                 "content": {{item.content | markdownify | strip_html | jsonify}},
                 "link": "{{ site.baseurl }}{{ item.url }}",
                 "date": "{{ item.date }}",
@@ -26,6 +27,7 @@ layout: null
     {% if post.title != null and post.title != empty %}
     {% unless first %},{% endunless %}{
         "title": {{post.title | jsonify}},
+        "tags": "{{ post.tags }}",
         "video_id": "{{ post.video_id }}",
         "content": {{post.content | markdownify | strip_html | jsonify}},
         "link": "{{ site.baseurl }}{{ post.url }}",

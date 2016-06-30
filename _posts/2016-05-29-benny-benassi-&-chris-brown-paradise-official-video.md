@@ -3,6 +3,7 @@ layout: post
 title:  "Benny Benassi & Chris Brown - Paradise (Official Video)"
 date:   2016-05-29 07:30:43 -0300
 categories: teste
+tags: [teste, Benny Benassi, Chris Brown]
 video-url: https://www.youtube.com/watch?v=2_wpOmM1d8w
 video_id: 2_wpOmM1d8w
 ---

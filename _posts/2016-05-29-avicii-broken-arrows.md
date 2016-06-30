@@ -3,6 +3,7 @@ layout: post
 title:  "Avicii - Broken Arrows"
 date:   2016-05-29 18:30:43 -0300
 categories: teste avicii
+tags: [Avicii]
 video-url: https://www.youtube.com/watch?v=V6iKSUoUN48
 video_id: V6iKSUoUN48
 ---

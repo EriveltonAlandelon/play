@@ -1,3 +1,6 @@
+<!-- ---
+layout: compress
+--- -->
 <!DOCTYPE html>
 <html>
   {% include head.html %}
@@ -83,6 +86,8 @@
     var idioma = navigator.language;
     }
     if(idioma == "pt-BR"){
+      var translator = $('body').translate({lang: "en", t: dict}); //use English
+    }else{
       var translator = $('body').translate({lang: "en", t: dict}); //use English
     }
   </script>

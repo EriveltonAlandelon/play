@@ -149,6 +149,7 @@ function showSearchResults(results) {
  */
 function populateResultContent(html, item) {
     html = injectContent(html, item.title, '##Title##');
+    html = injectContent(html, item.tags, '##tags##');
     html = injectContent(html, item.video_id, '##video_id##');
     html = injectContent(html, item.link, '##Url##');
     html = injectContent(html, item.excerpt, '##Excerpt##');

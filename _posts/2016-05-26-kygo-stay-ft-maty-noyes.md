@@ -3,6 +3,7 @@ layout: post
 title:  "Kygo - Stay ft. Maty Noyes"
 date:   2016-05-26 13:30:43 -0300
 categories: teste kygo maty noyes
+tags: [Maty Noyes, Kygo]
 video-url: https://www.youtube.com/watch?v=z9porfO8C_Q
 video_id: z9porfO8C_Q
 ---
