@@ -7,6 +7,16 @@ layout: compress
   <body>
     {% include header.html %}
     <main>
+    <div class="remodal" data-remodal-id="modal">
+      <button data-remodal-action="close" class="remodal-close"></button>
+      <h1>Remodal</h1>
+      <p>
+        Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+      </p>
+      <br>
+      <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+      <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+    </div>
     <div class="container">
       <div class="row">
         <div class="c12">
@@ -36,6 +46,7 @@ layout: compress
   <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js" data-turbolinks-eval=false></script>
   <script src="{{ "/js/echo.min.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
   <script async defer src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/1.3.0/turbolinks.min.js" data-turbolinks-eval=false></script>
+  <script src="{{ "/js/remodal.min.js" | prepend: site.baseurl }}"></script>
   <!-- Search script - Must appear after template -->
   <script src="/scripts/search.js"></script>
   <script type="text/javascript">
@@ -98,6 +109,24 @@ layout: compress
         $('nav').toggle();
       });
     });
+  </script>
+  <script>
+    $(function(){
+        $('#siteloader').load('teste.html');
+    });
+  </script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(["_setAccount", "UA-67059182-1"]);
+    _gaq.push(["_trackPageview"]);
+    (function() {
+        var e = document.createElement("script");
+        e.type = "text/javascript";
+        e.async = true;
+        e.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+        var t = document.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(e, t)
+    })()
   </script>
   </body>
 </html>

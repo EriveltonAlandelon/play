@@ -11,11 +11,8 @@
     </div>
     <nav>
       <ul>
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <li><a class="trn" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
+        <li><a class="trn" href="{{ "/tags/" | prepend: site.baseurl }}">Tags</a></li>
+        <li><a class="trn" data-remodal-target="modal">Contato</a></li>
       </ul>
       <!-- Search form -->
       <form method="get" action="/search" data-search-form>

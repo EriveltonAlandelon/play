@@ -216,6 +216,7 @@ header nav ul li a{
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.5);
 	float: left;
+	cursor: pointer;
 }
 header nav ul li a:hover{
 	color: #ededed;
