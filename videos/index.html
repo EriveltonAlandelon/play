@@ -1,0 +1,37 @@
+---
+layout: page
+title: Todos os Vídeos
+---
+
+<!-- This loops through the paginated posts -->
+<section class="videos">
+  <div class="container">
+    <div class="row">
+      {% for post in paginator.posts %}
+      <div class="c3">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <figure>
+            <img src="{{ "/img/loading.jpg" | prepend: site.baseurl }}" data-echo="http://img.youtube.com/vi/{{ post.video_id }}/mqdefault.jpg">
+            <figcaption>{{ post.title }}</figcaption>
+          </figure>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Anterior</a>
+  {% else %}
+    <span class="previous">Anterior</span>
+  {% endif %}
+  <span class="page_number ">Página: {{ paginator.page }} de {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Próxima</a>
+  {% else %}
+    <span class="next ">Próxima</span>
+  {% endif %}
+</div>
