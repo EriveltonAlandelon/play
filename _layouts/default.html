@@ -22,7 +22,7 @@ layout: compress
         <div class="c12">
           <!-- Search results placeholder -->
           <p data-search-found>
-            <span data-search-found-count></span><span data-search-found-term></span>
+            <span data-search-found-count></span><span data-search-found-teste></span><span data-search-found-term></span>
           </p>
           <div data-search-results></div>
         </div>
@@ -72,34 +72,23 @@ layout: compress
 
   // echo.render(); is also available for non-scroll callbacks
   </script>
-  <script src="{{ "/js/jquery.translate.js" | prepend: site.baseurl }}"></script>
-  <script type="text/javascript">
-    var dict = {
-      "Sobre": {
-        pt_br: "Sobre",
-        en: "About"
-      },
-      "Contato": {
-        pt_br: "Contato",
-        en: "Contact"
-      },
-      "Buscar": {
-        pt_br: "Buscar",
-        en: "Search"
-      }
-    }
-  </script>
+  <script src="{{ "/js/jquery-lang.js" | prepend: site.baseurl }}" charset="utf-8" type="text/javascript" data-turbolinks-eval=false></script>
   <script>
+    var lang = new Lang();
+    lang.dynamic('en', '/js/langpack/en.json');
+    lang.init({
+        defaultLang: 'br'
+      });
     if(navigator.browserLanguage) {  
     var idioma = navigator.browserLanguage;    
     }
     else if(navigator.language) {
     var idioma = navigator.language;
     }
-    if(idioma == "pt-BR"){
-      var translator = $('body').translate({lang: "en", t: dict}); //use English
+    if(idioma.toLowerCase() == "pt-br"){
+      window.lang.change('en');
     }else{
-      var translator = $('body').translate({lang: "en", t: dict}); //use English
+      window.lang.change('en');
     }
   </script>
   <script type="text/javascript">
@@ -108,11 +97,6 @@ layout: compress
         $(this).toggleClass('fechar');
         $('nav').toggle();
       });
-    });
-  </script>
-  <script>
-    $(function(){
-        $('#siteloader').load('teste.html');
     });
   </script>
   <script type="text/javascript">

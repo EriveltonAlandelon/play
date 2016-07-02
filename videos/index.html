@@ -24,14 +24,14 @@ title: Todos os Vídeos
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Anterior</a>
+    <a lang="br" href="{{ paginator.previous_page_path }}" class="previous">Anterior</a>
   {% else %}
-    <span class="previous">Anterior</span>
+    <span lang="br" class="previous">Anterior</span>
   {% endif %}
-  <span class="page_number ">Página: {{ paginator.page }} de {{ paginator.total_pages }}</span>
+  <span class="page_number "><span lang="br">Página: </span><span>{{ paginator.page }}</span><span lang="br"> de </span><span>{{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Próxima</a>
+    <a lang="br" href="{{ paginator.next_page_path }}" class="next">Próxima</a>
   {% else %}
-    <span class="next ">Próxima</span>
+    <span lang="br" class="next ">Próxima</span>
   {% endif %}
 </div>

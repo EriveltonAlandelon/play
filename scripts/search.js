@@ -17,6 +17,7 @@ var q, jsonFeedUrl = "/feeds/feed.json",
     $resultTemplate = $("#search-result"),
     $resultsPlaceholder = $("[data-search-results]"),
     $foundContainer = $("[data-search-found]"),
+    $foundTeste = $("[data-search-found-teste]"),
     $foundTerm = $("[data-search-found-term]"),
     $foundCount = $("[data-search-found-count]"),
     allowEmpty = true,
@@ -165,7 +166,12 @@ function populateResultContent(html, item) {
  */
 function populateResultsString(count) {
     $foundTerm.text('"'+q+'".');
-    $foundCount.text(count+" resultado(s) para ");
+    $foundCount.text(count+"");
+    if(idioma == "pt-BR"){
+      $foundTeste.text(' resultado(s) para ');
+    }else{
+      $foundTeste.text(' result(s) for ');
+    }
     $foundContainer.show();
 }
 
