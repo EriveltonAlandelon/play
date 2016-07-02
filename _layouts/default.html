@@ -17,27 +17,29 @@ layout: compress
       <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
       <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="c12">
-          <!-- Search results placeholder -->
-          <p data-search-found>
-            <span data-search-found-count></span><span data-search-found-teste></span><span data-search-found-term></span>
-          </p>
-          <div data-search-results></div>
+    <div class="resultado">
+      <div class="container">
+        <div class="row">
+          <div class="c12">
+            <!-- Search results placeholder -->
+            <p data-search-found>
+              <span data-search-found-count></span><span data-search-found-teste></span><span data-search-found-term></span>
+            </p>
+            <div data-search-results></div>
+          </div>
         </div>
+        <!-- Search result template -->
+        <script type="text/x-template" id="search-result">
+        <div class="c3">
+          <a href="##Url##">
+            <figure>
+              <img src="http://img.youtube.com/vi/##video_id##/mqdefault.jpg" data-echo="http://img.youtube.com/vi/##video_id##/mqdefault.jpg">
+              <figcaption>##Title##</figcaption>
+            </figure>
+          </a>
+        </div>
+        </script>
       </div>
-      <!-- Search result template -->
-      <script type="text/x-template" id="search-result">
-      <div class="c3">
-        <a href="##Url##">
-          <figure>
-            <img src="http://img.youtube.com/vi/##video_id##/mqdefault.jpg" data-echo="http://img.youtube.com/vi/##video_id##/mqdefault.jpg">
-            <figcaption>##Title##</figcaption>
-          </figure>
-        </a>
-      </div>
-      </script>
     </div>
         {{ content }}
     </main>
@@ -49,6 +51,7 @@ layout: compress
   <script src="{{ "/js/remodal.min.js" | prepend: site.baseurl }}"></script>
   <!-- Search script - Must appear after template -->
   <script src="/scripts/search.js"></script>
+  <script src="{{ "/js/scripts.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
   <script type="text/javascript">
     $(document).on('page:fetch', function() {
       NProgress.start();

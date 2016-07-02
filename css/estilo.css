@@ -278,6 +278,16 @@ header nav form input[type="image"]{
 main{
 	display: block;
 }
+main .resultado{
+	background: #161616;
+	float: left;
+	width: 100%;
+}
+main .resultado p{
+	font-size: 17px;
+	color: #fff;
+	margin: 50px;
+}
 main .mais-recente{
 	width: 100%;
 	float: left;
@@ -376,6 +386,103 @@ main .row .c3 a figure figcaption{
     left: 0;
     right: 0;
     padding: 2%;
+}
+main .todos-os-videos{
+	text-align: center;
+}
+main .todos-os-videos a{
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 18px;
+	text-decoration: none;
+	margin: 10px 0 20px 0;
+	color: #fff;
+	position: relative;
+	display: inline-block;
+	background-color: #9b59b6;
+  	box-shadow: 0px 5px 0px 0px #82409D;
+    text-decoration: none;
+}
+main .todos-os-videos a:hover{
+	background-color: #B573D0;
+}
+main .tags{
+	list-style: none;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+main .tags li{
+	display: inline-block;
+}
+main .tags li a{
+	display: inline-block;
+	text-decoration: none;
+    line-height: 35px;
+    margin: 8px;
+    padding: 5px 15px;
+    font-size: 15px;
+    position: relative;
+    opacity: .999;
+    border: 1px solid #3498db;
+    border-radius: 3px;
+	color: #3498db;
+}
+main .tags li a:hover{
+	border: 1px solid #9D50BB;
+	color: #9D50BB;
+}
+main .page{
+	margin-top: 7px;
+	margin-bottom: 15px;
+	float: left;
+	width: 100%;
+}
+main .page h1{
+	text-align: center;
+	border-bottom: 2px solid;
+	margin-bottom: 5px;
+	color: #3d3d3d;
+}
+main .page .pagination{
+	text-align: center;
+}
+main .page .pagination a{
+	border: solid 1px #d7d7d7;
+    border-radius: 0.2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 0.9rem;
+    background: #2e2f30;
+    margin: 0 5px;
+}
+main .page .pagination a:hover{
+	background: #1D1F20;
+}
+main .page .pagination span.previous{
+	border: solid 1px #d7d7d7;
+    border-radius: 0.2rem;
+    color: #7d7d7d;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 0.9rem;
+    margin: 0 5px;
+}
+main .page .pagination span.next{
+	border: solid 1px #d7d7d7;
+    border-radius: 0.2rem;
+    color: #7d7d7d;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 0.9rem;
+    margin: 0 5px;
 }
 footer{
 	width: 100%;
