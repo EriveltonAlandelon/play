@@ -286,7 +286,7 @@ main .resultado{
 main .resultado p{
 	font-size: 17px;
 	color: #fff;
-	margin: 50px;
+	line-height: 40px;
 }
 main .mais-recente{
 	width: 100%;
