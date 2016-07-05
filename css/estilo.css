@@ -9,7 +9,6 @@ a{
 input{
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-
 /* Make clicks pass-through */
 #nprogress {
   pointer-events: none;
@@ -209,11 +208,12 @@ header a.logo span{
   left: 50%;
 }
 header nav{
+	width: 72.5%;
 	float: right;
 }
 header nav ul{
 	list-style: none;
-	float: left;
+	float: right;
 	margin-right: 10px;
 }
 header nav ul li{
@@ -263,6 +263,27 @@ header nav form input[type="image"]{
 	padding: 5px;
 	float: right;
 }
+header nav #search-container{
+	float: left;
+	width: 60%;
+	margin: 19px 0 0 0;
+}
+header nav #search-container #search-input {
+  width: 90%;
+  opacity: 0.4;
+  text-align: center;
+  @include rounded(6px);
+  border: none;
+  box-shadow: 0 1px 4px #555 inset;
+  color: #888;
+  padding: 10px;
+  font-size: 90%;
+  display: block;
+}
+header nav #search-container #search-input:focus {
+  opacity: 0.8;
+  outline: 0;
+}
 .video-container{
 	width: 100%;
 	text-align: center;
@@ -288,7 +309,7 @@ main .resultado p{
 	color: #fff;
 	line-height: 40px;
 }
-main .mais-recente{
+main .destaques{
 	width: 100%;
 	float: left;
 	margin-top: 7px;
@@ -301,6 +322,16 @@ main .row .c6{
 	float: left;
 }
 */
+main #results-container{
+	float: left;
+	width: 100%;
+	background: #161616;
+}
+main #results-container .search-result-block-container .search-result-block-title span{
+	margin: 10px 10px 13px 10px;
+	display: block;
+	color: #fff;
+}
 main .row{
 	width: 99%;
 	margin: 0 auto;
@@ -406,16 +437,20 @@ main .todos-os-videos a{
 main .todos-os-videos a:hover{
 	background-color: #B573D0;
 }
-main .tags{
+.tags-result{
+	float: left;
+	width: 100%;
+}
+.tags{
 	list-style: none;
 	text-align: center;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-main .tags li{
+.tags li{
 	display: inline-block;
 }
-main .tags li a{
+.tags li a{
 	display: inline-block;
 	text-decoration: none;
     line-height: 35px;
@@ -424,13 +459,13 @@ main .tags li a{
     font-size: 15px;
     position: relative;
     opacity: .999;
-    border: 1px solid #3498db;
+    border: 1px solid #9D50BB;
     border-radius: 3px;
-	color: #3498db;
-}
-main .tags li a:hover{
-	border: 1px solid #9D50BB;
 	color: #9D50BB;
+}
+.tags li a:hover{
+	border: 1px solid #3498db;
+	color: #3498db;
 }
 main .page{
 	margin-top: 7px;
@@ -442,7 +477,7 @@ main .page h1{
 	text-align: center;
 	border-bottom: 2px solid;
 	margin-bottom: 5px;
-	color: #3d3d3d;
+	color: #0077D3;
 }
 main .page .pagination{
 	text-align: center;
@@ -455,12 +490,12 @@ main .page .pagination a{
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
-    padding: 0.5rem 0.9rem;
-    background: #2e2f30;
+    padding: 14px 20px;
+    background: #9b59b6;
     margin: 0 5px;
 }
 main .page .pagination a:hover{
-	background: #1D1F20;
+	background: #B573D0;
 }
 main .page .pagination span.previous{
 	border: solid 1px #d7d7d7;
@@ -470,7 +505,7 @@ main .page .pagination span.previous{
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
-    padding: 0.5rem 0.9rem;
+    padding: 14px 20px;
     margin: 0 5px;
 }
 main .page .pagination span.next{
@@ -481,8 +516,18 @@ main .page .pagination span.next{
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
-    padding: 0.5rem 0.9rem;
+    padding: 14px 20px;
     margin: 0 5px;
+}
+.remodal h1{
+	text-align: center;
+	border-bottom: 2px solid;
+	margin-bottom: 5px;
+	color: #0077D3;
+}
+.remodal a{
+	padding: 25px 25px 35px 25px;
+	display: inline-block;
 }
 footer{
 	width: 100%;
@@ -500,17 +545,12 @@ footer p{
 		height: 400px;
 	}
 }
-@media screen and (max-width: 820px){
-	.video-container iframe{
-		height: 350px;
-	}
-}
-@media screen and (min-width: 651px){
+@media screen and (min-width: 972px){
     header nav{
     	display: block !important;
     }
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 971px){
 	.container{
 		max-width: 950px;
 		width: 95%;
@@ -518,7 +558,7 @@ footer p{
 	}
 	header .logo{
 		float: none;
-		width: 225px;
+		width: 238px;
 		margin: 0 auto;
 	}
 	header .logo a{
@@ -586,6 +626,17 @@ footer p{
 	    margin: 0 auto;
 	    width: 50%;
 	}
+	header nav #search-container{
+		float: none;
+		max-width: 300px;
+		width: 80%;
+		margin: 19px auto;
+	}
+	.video-container iframe{
+		height: 350px;
+	}
+}
+@media screen and (max-width: 650px){
 	.video-container iframe{
 		height: 250px;
 	}

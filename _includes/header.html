@@ -12,14 +12,13 @@
     <nav>
       <ul>
         <li><a lang="br" href="{{ "/videos/" | prepend: site.baseurl }}">Todos os Vídeos</a></li>
-        <li><a href="{{ "/tags/" | prepend: site.baseurl }}">Tags</a></li>
-        <li><a lang="br" data-remodal-target="modal">Contato</a></li>
+        <li><a data-remodal-target="tags">Tags</a></li>
+        <li><a lang="br" data-remodal-target="contato">Contato</a></li>
       </ul>
       <!-- Search form -->
-      <form method="get" action="/search" data-search-form>
-        <input type="search" required="" name="q" id="q" placeholder="Buscar" lang="br" data-search-input />
-        <input type="image" src="{{ "/img/search.svg" | prepend: site.baseurl }}" alt="Buscar" />
-      </form>
+      <div id="search-container">
+          <input type="text" id="search-input" placeholder="Buscar" lang="br">
+      </div>
     </nav>
   </div>
 </header>

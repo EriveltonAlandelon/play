@@ -166,11 +166,11 @@ function populateResultContent(html, item) {
  */
 function populateResultsString(count) {
     $foundTerm.text('"'+q+'".');
-    $foundCount.text(count+"");
+    $foundCount.text("");
     if(idioma == "pt-BR"){
-      $foundTeste.text(' resultado(s) para ');
+      $foundTeste.text(' Vídeos com a tag ');
     }else{
-      $foundTeste.text(' result(s) for ');
+      $foundTeste.text(' Videos with tag ');
     }
     $foundContainer.show();
 }

@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<section class="mais-recente">
+<section class="destaques">
   <div class="container">
     <div class="row">
-      {% for post in site.posts limit:3 %}
+      {% for post in site.categories['destaques'] limit:3 %}
         <div class="c6">
           <a href="{{ site.baseurl }}{{ post.url }}">
             <figure>
@@ -20,9 +20,9 @@ layout: default
 </section>
 <section class="videos">
   <div class="container">
-    <h1>House</h1>
+    <h1>Avicii</h1>
     <div class="row">
-      {% for post in site.tags['teste'] limit:4 %}
+      {% for post in site.tags['Avicii'] limit:4 %}
       <div class="c3">
         <a href="{{ site.baseurl }}{{ post.url }}">
           <figure>
@@ -37,9 +37,9 @@ layout: default
 </section>
 <section class="videos">
   <div class="container">
-    <h1>House</h1>
+    <h1>Calvin Harris</h1>
     <div class="row">
-      {% for post in site.categories['teste'] limit:4 %}
+      {% for post in site.tags['Calvin Harris'] limit:4 %}
       <div class="c3">
         <a href="{{ site.baseurl }}{{ post.url }}">
           <figure>
@@ -54,9 +54,9 @@ layout: default
 </section>
 <section class="videos">
   <div class="container">
-    <h1>House</h1>
+    <h1>Carly Rae Jepsen</h1>
     <div class="row">
-      {% for post in site.categories['teste'] limit:4 %}
+      {% for post in site.tags['Carly Rae Jepsen'] limit:4 %}
       <div class="c3">
         <a href="{{ site.baseurl }}{{ post.url }}">
           <figure>
@@ -71,9 +71,9 @@ layout: default
 </section>
 <section class="videos">
   <div class="container">
-    <h1>House</h1>
+    <h1>Ellie Goulding</h1>
     <div class="row">
-      {% for post in site.categories['teste'] limit:4 %}
+      {% for post in site.tags['Ellie Goulding'] limit:4 %}
       <div class="c3">
         <a href="{{ site.baseurl }}{{ post.url }}">
           <figure>
@@ -88,43 +88,9 @@ layout: default
 </section>
 <section class="videos">
   <div class="container">
-    <h1>House</h1>
+    <h1>Taylor Swift</h1>
     <div class="row">
-      {% for post in site.categories['teste'] limit:4 %}
-      <div class="c3">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <figure>
-            <img src="{{ "/img/loading.jpg" | prepend: site.baseurl }}" data-echo="http://img.youtube.com/vi/{{ post.video_id }}/mqdefault.jpg">
-            <figcaption>{{ post.title }}</figcaption>
-          </figure>
-        </a>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-<section class="videos">
-  <div class="container">
-    <h1>House</h1>
-    <div class="row">
-      {% for post in site.categories['teste'] limit:4 %}
-      <div class="c3">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <figure>
-            <img src="{{ "/img/loading.jpg" | prepend: site.baseurl }}" data-echo="http://img.youtube.com/vi/{{ post.video_id }}/mqdefault.jpg">
-            <figcaption>{{ post.title }}</figcaption>
-          </figure>
-        </a>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-<section class="videos">
-  <div class="container">
-    <h1>House</h1>
-    <div class="row">
-      {% for post in site.categories['teste'] limit:6 %}
+      {% for post in site.tags['Taylor Swift'] limit:4 %}
       <div class="c3">
         <a href="{{ site.baseurl }}{{ post.url }}">
           <figure>
@@ -138,5 +104,7 @@ layout: default
   </div>
 </section>
 <div class="todos-os-videos">
-  <a lang="br" href="{{ "/videos/" | prepend: site.baseurl }}">ver todos os vídeos</a>
+  <div class="container">
+    <a lang="br" href="{{ "/videos/" | prepend: site.baseurl }}">ver todos os vídeos</a>
+  </div>
 </div>
