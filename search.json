@@ -1,17 +1,323 @@
----
-sitemap: false
----
-
 [
-  {% for post in site.posts %}
+  
     {
-      "title"    : "{{ post.title | escape }}",
-      "video_id"    : "{{ post.video_id }}",
-      "category" : "{{ post.category }}",
-      "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
-      "date"     : "{{ post.date }}",
-      "excerpt"  : "{{ post.excerpt | strip_html | strip_newlines  }}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
+      "title"    : "Carly Rae Jepsen - Run Away With Me",
+      "video_id"    : "TeccAtqd5K8",
+      "category" : "",
+      "tags"     : "Carly Rae Jepsen",
+      "url"      : "/watch/TeccAtqd5K8",
+      "date"     : "2016-07-05 02:36:03 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Owl City &amp; Carly Rae Jepsen - Good Time",
+      "video_id"    : "H7HmzwI67ec",
+      "category" : "",
+      "tags"     : "Owl City, Carly Rae Jepsen",
+      "url"      : "/watch/H7HmzwI67ec",
+      "date"     : "2016-07-05 02:34:53 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Carly Rae Jepsen - I Really Like You",
+      "video_id"    : "qV5lzRHrGeg",
+      "category" : "",
+      "tags"     : "Carly Rae Jepsen",
+      "url"      : "/watch/qV5lzRHrGeg",
+      "date"     : "2016-07-05 02:33:09 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Carly Rae Jepsen - Your Type",
+      "video_id"    : "UlFMVzo9zuE",
+      "category" : "",
+      "tags"     : "Carly Rae Jepsen",
+      "url"      : "/watch/UlFMVzo9zuE",
+      "date"     : "2016-07-05 02:29:29 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Taylor Swift - Wildest Dreams",
+      "video_id"    : "IdneKLhsWOQ",
+      "category" : "",
+      "tags"     : "Taylor Swift",
+      "url"      : "/watch/IdneKLhsWOQ",
+      "date"     : "2016-07-05 02:16:48 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Taylor Swift - Style",
+      "video_id"    : "-CmadmM5cOk",
+      "category" : "",
+      "tags"     : "Taylor Swift",
+      "url"      : "/watch/CmadmM5cOk",
+      "date"     : "2016-07-05 02:14:39 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Taylor Swift - Out Of The Woods",
+      "video_id"    : "JLf9q36UsBk",
+      "category" : "",
+      "tags"     : "Taylor Swift",
+      "url"      : "/watch/JLf9q36UsBk",
+      "date"     : "2016-07-05 02:13:19 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Ellie Goulding - Goodness Gracious",
+      "video_id"    : "ekPBOVgGRSA",
+      "category" : "",
+      "tags"     : "Ellie Goulding",
+      "url"      : "/watch/ekPBOVgGRSA",
+      "date"     : "2016-07-05 01:47:45 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Ellie Goulding - Beating Heart",
+      "video_id"    : "wrNTOo4KH8c",
+      "category" : "",
+      "tags"     : "Ellie Goulding",
+      "url"      : "/watch/wrNTOo4KH8c",
+      "date"     : "2016-07-05 01:47:06 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Ellie Goulding - Something In The Way You Move",
+      "video_id"    : "hOT2XC9nmSU",
+      "category" : "",
+      "tags"     : "Ellie Goulding",
+      "url"      : "/watch/hOT2XC9nmSU",
+      "date"     : "2016-07-05 01:46:12 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Ellie Goulding - Love Me Like You Do (Official Video)",
+      "video_id"    : "AJtDXIazrMo",
+      "category" : "",
+      "tags"     : "Ellie Goulding",
+      "url"      : "/watch/AJtDXIazrMo",
+      "date"     : "2016-07-05 01:45:09 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Calvin Harris - I Need Your Love ft. Ellie Goulding",
+      "video_id"    : "AtKZKl7Bgu0",
+      "category" : "",
+      "tags"     : "Calvin Harris, Ellie Goulding",
+      "url"      : "/watch/AtKZKl7Bgu0",
+      "date"     : "2016-07-05 01:35:12 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Calvin Harris &amp; Alesso - Under Control ft. Hurts",
+      "video_id"    : "yZqmarGShxg",
+      "category" : "",
+      "tags"     : "Calvin Harris, Alesso, Hurts",
+      "url"      : "/watch/yZqmarGShxg",
+      "date"     : "2016-07-05 01:32:15 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Calvin Harris - Feel So Close",
+      "video_id"    : "dGghkjpNCQ8",
+      "category" : "",
+      "tags"     : "Calvin Harris",
+      "url"      : "/watch/dGghkjpNCQ8",
+      "date"     : "2016-07-05 01:30:30 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Calvin Harris - Summer",
+      "video_id"    : "ebXbLfLACGM",
+      "category" : "",
+      "tags"     : "Calvin Harris",
+      "url"      : "/watch/ebXbLfLACGM",
+      "date"     : "2016-07-05 01:19:47 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Avicii - The Nights",
+      "video_id"    : "UtF6Jej8yb4",
+      "category" : "",
+      "tags"     : "Avicii",
+      "url"      : "/watch/UtF6Jej8yb4",
+      "date"     : "2016-07-05 01:07:04 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Avicii - Waiting For Love",
+      "video_id"    : "cHHLHGNpCSA",
+      "category" : "",
+      "tags"     : "Avicii",
+      "url"      : "/watch/cHHLHGNpCSA",
+      "date"     : "2016-07-05 01:05:50 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Avicii - Wake Me Up (Official Video)",
+      "video_id"    : "IcrbM1l_BoI",
+      "category" : "",
+      "tags"     : "Avicii",
+      "url"      : "/watch/IcrbM1l_BoI",
+      "date"     : "2016-07-05 01:02:45 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Avicii - Fade Into Darkness (Official Music Video) [HD]",
+      "video_id"    : "KQYzF84xocw",
+      "category" : "",
+      "tags"     : "Avicii",
+      "url"      : "/watch/KQYzF84xocw",
+      "date"     : "2016-07-05 01:00:34 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Avicii - You Make Me (Official)",
+      "video_id"    : "2GADx4Hy-Gg",
+      "category" : "",
+      "tags"     : "Avicii",
+      "url"      : "/watch/2GADx4Hy-Gg",
+      "date"     : "2016-07-04 12:49:32 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Kygo - Firestone ft. Conrad Sewell",
+      "video_id"    : "9Sc-ir2UwGU",
+      "category" : "",
+      "tags"     : "Kygo, Conrad Sewell",
+      "url"      : "/watch/9Sc-ir2UwGU",
+      "date"     : "2016-07-04 12:41:33 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Mike Posner - I Took A Pill In Ibiza (Seeb Remix) (Explicit)",
+      "video_id"    : "foE1mO2yM04",
+      "category" : "",
+      "tags"     : "Mike Posner, Seeb Remix",
+      "url"      : "/watch/foE1mO2yM04",
+      "date"     : "2016-07-02 01:28:51 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Becky G - Can&#39;t Stop Dancin&#39;",
+      "video_id"    : "7NwzxGntDgs",
+      "category" : "",
+      "tags"     : "Becky G",
+      "url"      : "/watch/7NwzxGntDgs",
+      "date"     : "2016-06-30 22:58:36 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "David Guetta - Bang My Head (Official Video) feat Sia &amp; Fetty Wap",
+      "video_id"    : "qqjVwAg5fK4",
+      "category" : "",
+      "tags"     : "David Guetta, Sia, Fetty Wap",
+      "url"      : "/watch/qqjVwAg5fK4",
+      "date"     : "2016-06-30 07:10:01 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Fifth Harmony - All In My Head (Flex) ft. Fetty Wap",
+      "video_id"    : "jsbeemdD2rQ",
+      "category" : "",
+      "tags"     : "Fifth Harmony, Fetty Wap",
+      "url"      : "/watch/jsbeemdD2rQ",
+      "date"     : "2016-06-30 06:29:40 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Calvin Harris - This Is What You Came For (Official Video) ft. Rihanna",
+      "video_id"    : "kOkQ4T5WO9E",
+      "category" : "",
+      "tags"     : "Calvin Harris, Rihanna",
+      "url"      : "/watch/kOkQ4T5WO9E",
+      "date"     : "2016-06-17 20:51:00 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Taylor Swift - New Romantics",
+      "video_id"    : "wyK7YuwUWsU",
+      "category" : "",
+      "tags"     : "Taylor Swift",
+      "url"      : "/watch/wyK7YuwUWsU",
+      "date"     : "2016-06-17 20:41:00 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Avicii - Broken Arrows",
+      "video_id"    : "V6iKSUoUN48",
+      "category" : "",
+      "tags"     : "Avicii",
+      "url"      : "/watch/V6iKSUoUN48",
+      "date"     : "2016-05-29 18:30:43 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Kygo - Raging ft. Kodaline",
+      "video_id"    : "ZWyktWYW3ZM",
+      "category" : "",
+      "tags"     : "Kygo, Kodaline",
+      "url"      : "/watch/ZWyktWYW3ZM",
+      "date"     : "2016-05-29 17:30:43 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Benny Benassi &amp; Chris Brown - Paradise (Official Video)",
+      "video_id"    : "2_wpOmM1d8w",
+      "category" : "",
+      "tags"     : "Benny Benassi, Chris Brown",
+      "url"      : "/watch/2_wpOmM1d8w",
+      "date"     : "2016-05-29 07:30:43 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Kygo - Stay ft. Maty Noyes",
+      "video_id"    : "z9porfO8C_Q",
+      "category" : "",
+      "tags"     : "Maty Noyes, Kygo",
+      "url"      : "/watch/z9porfO8C_Q",
+      "date"     : "2016-05-26 13:30:43 -0300",
+      "excerpt"  : ""
+    } ,
+  
+    {
+      "title"    : "Jonas Blue - Fast Car ft. Dakota",
+      "video_id"    : "5yXQJBU8A28",
+      "category" : "",
+      "tags"     : "Jonas Blue, Dakota",
+      "url"      : "/watch/5yXQJBU8A28",
+      "date"     : "2016-05-26 12:30:43 -0300",
+      "excerpt"  : ""
+    } 
+  
 ]

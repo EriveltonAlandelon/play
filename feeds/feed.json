@@ -1,55 +1,517 @@
----
-layout: null
----
-{% assign first = true %}
+
 [
-{% for collection in site.collections %}
-    {% for item in collection %}
-        {% for item in site.[item.label] %}
-            {% if item.title != null and item.title != empty %}
-            {% unless first %},{% endunless %}{
-                "title": {{item.title | jsonify}},
-                "tags": "{{ item.tags }}",
-                "content": {{item.content | markdownify | strip_html | jsonify}},
-                "link": "{{ site.baseurl }}{{ item.url }}",
-                "date": "{{ item.date }}",
-                "excerpt": "{{ item.snippet }}",
-                "search_omit": "{{ item.search_omit }}"
-            }
-            {% assign first = false %}
-            {% endif %}
-        {% endfor %}
-    {% endfor %}
-{% endfor %}
+
+    
 
 
-{% for post in site.posts %}
-    {% if post.title != null and post.title != empty %}
-    {% unless first %},{% endunless %}{
-        "title": {{post.title | jsonify}},
-        "tags": "{{ post.tags }}",
-        "video_id": "{{ post.video_id }}",
-        "content": {{post.content | markdownify | strip_html | jsonify}},
-        "link": "{{ site.baseurl }}{{ post.url }}",
-        "date": "{{ post.date }}",
-        "excerpt": "{{ post.snippet }}",
-        "search_omit": "{{ post.search_omit }}"
+
+
+    
+    {
+        "title": "Carly Rae Jepsen - Run Away With Me",
+        "tags": "Carly Rae Jepsen",
+        "video_id": "TeccAtqd5K8",
+        "content": "\n",
+        "link": "/watch/TeccAtqd5K8",
+        "date": "2016-07-05 02:36:03 -0300",
+        "excerpt": "",
+        "search_omit": ""
     }
-    {% assign first = false %}
-    {% endif %}
-{% endfor %}
+    
+    
 
-{% for page in site.pages %}
-    {% if page.title != null and page.title != empty %}
-    {% unless first %},{% endunless %}{
-        "title": {{page.title | jsonify}},
-        "content": {{page.content | strip_html | jsonify}},
-        "link": "{{ site.baseurl }}{{ page.url | replace: 'index.html', '' }}",
-        "date": {{ page.date | jsonify }},
-        "excerpt": {{ page.description | jsonify }},
-        "search_omit": "{{ page.search_omit }}"
+    
+    ,{
+        "title": "Owl City & Carly Rae Jepsen - Good Time",
+        "tags": "Owl CityCarly Rae Jepsen",
+        "video_id": "H7HmzwI67ec",
+        "content": "\n",
+        "link": "/watch/H7HmzwI67ec",
+        "date": "2016-07-05 02:34:53 -0300",
+        "excerpt": "",
+        "search_omit": ""
     }
-    {% assign first = false %}
-    {% endif %}
-{% endfor %}
+    
+    
+
+    
+    ,{
+        "title": "Carly Rae Jepsen - I Really Like You",
+        "tags": "Carly Rae Jepsen",
+        "video_id": "qV5lzRHrGeg",
+        "content": "\n",
+        "link": "/watch/qV5lzRHrGeg",
+        "date": "2016-07-05 02:33:09 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Carly Rae Jepsen - Your Type",
+        "tags": "Carly Rae Jepsen",
+        "video_id": "UlFMVzo9zuE",
+        "content": "\n",
+        "link": "/watch/UlFMVzo9zuE",
+        "date": "2016-07-05 02:29:29 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Taylor Swift - Wildest Dreams",
+        "tags": "Taylor Swift",
+        "video_id": "IdneKLhsWOQ",
+        "content": "\n",
+        "link": "/watch/IdneKLhsWOQ",
+        "date": "2016-07-05 02:16:48 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Taylor Swift - Style",
+        "tags": "Taylor Swift",
+        "video_id": "-CmadmM5cOk",
+        "content": "\n",
+        "link": "/watch/CmadmM5cOk",
+        "date": "2016-07-05 02:14:39 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Taylor Swift - Out Of The Woods",
+        "tags": "Taylor Swift",
+        "video_id": "JLf9q36UsBk",
+        "content": "\n",
+        "link": "/watch/JLf9q36UsBk",
+        "date": "2016-07-05 02:13:19 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Ellie Goulding - Goodness Gracious",
+        "tags": "Ellie Goulding",
+        "video_id": "ekPBOVgGRSA",
+        "content": "\n",
+        "link": "/watch/ekPBOVgGRSA",
+        "date": "2016-07-05 01:47:45 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Ellie Goulding - Beating Heart",
+        "tags": "Ellie Goulding",
+        "video_id": "wrNTOo4KH8c",
+        "content": "\n",
+        "link": "/watch/wrNTOo4KH8c",
+        "date": "2016-07-05 01:47:06 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Ellie Goulding - Something In The Way You Move",
+        "tags": "Ellie Goulding",
+        "video_id": "hOT2XC9nmSU",
+        "content": "\n",
+        "link": "/watch/hOT2XC9nmSU",
+        "date": "2016-07-05 01:46:12 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Ellie Goulding - Love Me Like You Do (Official Video)",
+        "tags": "Ellie Goulding",
+        "video_id": "AJtDXIazrMo",
+        "content": "\n",
+        "link": "/watch/AJtDXIazrMo",
+        "date": "2016-07-05 01:45:09 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Calvin Harris - I Need Your Love ft. Ellie Goulding",
+        "tags": "Calvin HarrisEllie Goulding",
+        "video_id": "AtKZKl7Bgu0",
+        "content": "\n",
+        "link": "/watch/AtKZKl7Bgu0",
+        "date": "2016-07-05 01:35:12 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Calvin Harris & Alesso - Under Control ft. Hurts",
+        "tags": "Calvin HarrisAlessoHurts",
+        "video_id": "yZqmarGShxg",
+        "content": "\n",
+        "link": "/watch/yZqmarGShxg",
+        "date": "2016-07-05 01:32:15 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Calvin Harris - Feel So Close",
+        "tags": "Calvin Harris",
+        "video_id": "dGghkjpNCQ8",
+        "content": "\n",
+        "link": "/watch/dGghkjpNCQ8",
+        "date": "2016-07-05 01:30:30 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Calvin Harris - Summer",
+        "tags": "Calvin Harris",
+        "video_id": "ebXbLfLACGM",
+        "content": "\n",
+        "link": "/watch/ebXbLfLACGM",
+        "date": "2016-07-05 01:19:47 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Avicii - The Nights",
+        "tags": "Avicii",
+        "video_id": "UtF6Jej8yb4",
+        "content": "\n",
+        "link": "/watch/UtF6Jej8yb4",
+        "date": "2016-07-05 01:07:04 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Avicii - Waiting For Love",
+        "tags": "Avicii",
+        "video_id": "cHHLHGNpCSA",
+        "content": "\n",
+        "link": "/watch/cHHLHGNpCSA",
+        "date": "2016-07-05 01:05:50 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Avicii - Wake Me Up (Official Video)",
+        "tags": "Avicii",
+        "video_id": "IcrbM1l_BoI",
+        "content": "\n",
+        "link": "/watch/IcrbM1l_BoI",
+        "date": "2016-07-05 01:02:45 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Avicii - Fade Into Darkness (Official Music Video) [HD]",
+        "tags": "Avicii",
+        "video_id": "KQYzF84xocw",
+        "content": "\n",
+        "link": "/watch/KQYzF84xocw",
+        "date": "2016-07-05 01:00:34 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Avicii - You Make Me (Official)",
+        "tags": "Avicii",
+        "video_id": "2GADx4Hy-Gg",
+        "content": "\n",
+        "link": "/watch/2GADx4Hy-Gg",
+        "date": "2016-07-04 12:49:32 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Kygo - Firestone ft. Conrad Sewell",
+        "tags": "KygoConrad Sewell",
+        "video_id": "9Sc-ir2UwGU",
+        "content": "\n",
+        "link": "/watch/9Sc-ir2UwGU",
+        "date": "2016-07-04 12:41:33 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Mike Posner - I Took A Pill In Ibiza (Seeb Remix) (Explicit)",
+        "tags": "Mike PosnerSeeb Remix",
+        "video_id": "foE1mO2yM04",
+        "content": "\n",
+        "link": "/watch/foE1mO2yM04",
+        "date": "2016-07-02 01:28:51 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Becky G - Can't Stop Dancin'",
+        "tags": "Becky G",
+        "video_id": "7NwzxGntDgs",
+        "content": "\n",
+        "link": "/watch/7NwzxGntDgs",
+        "date": "2016-06-30 22:58:36 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "David Guetta - Bang My Head (Official Video) feat Sia & Fetty Wap",
+        "tags": "David GuettaSiaFetty Wap",
+        "video_id": "qqjVwAg5fK4",
+        "content": "\n",
+        "link": "/watch/qqjVwAg5fK4",
+        "date": "2016-06-30 07:10:01 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Fifth Harmony - All In My Head (Flex) ft. Fetty Wap",
+        "tags": "Fifth HarmonyFetty Wap",
+        "video_id": "jsbeemdD2rQ",
+        "content": "\n",
+        "link": "/watch/jsbeemdD2rQ",
+        "date": "2016-06-30 06:29:40 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Calvin Harris - This Is What You Came For (Official Video) ft. Rihanna",
+        "tags": "Calvin HarrisRihanna",
+        "video_id": "kOkQ4T5WO9E",
+        "content": "\n",
+        "link": "/watch/kOkQ4T5WO9E",
+        "date": "2016-06-17 20:51:00 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Taylor Swift - New Romantics",
+        "tags": "Taylor Swift",
+        "video_id": "wyK7YuwUWsU",
+        "content": "\n",
+        "link": "/watch/wyK7YuwUWsU",
+        "date": "2016-06-17 20:41:00 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Avicii - Broken Arrows",
+        "tags": "Avicii",
+        "video_id": "V6iKSUoUN48",
+        "content": "\n",
+        "link": "/watch/V6iKSUoUN48",
+        "date": "2016-05-29 18:30:43 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Kygo - Raging ft. Kodaline",
+        "tags": "KygoKodaline",
+        "video_id": "ZWyktWYW3ZM",
+        "content": "\n",
+        "link": "/watch/ZWyktWYW3ZM",
+        "date": "2016-05-29 17:30:43 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Benny Benassi & Chris Brown - Paradise (Official Video)",
+        "tags": "Benny BenassiChris Brown",
+        "video_id": "2_wpOmM1d8w",
+        "content": "\n",
+        "link": "/watch/2_wpOmM1d8w",
+        "date": "2016-05-29 07:30:43 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Kygo - Stay ft. Maty Noyes",
+        "tags": "Maty NoyesKygo",
+        "video_id": "z9porfO8C_Q",
+        "content": "\n",
+        "link": "/watch/z9porfO8C_Q",
+        "date": "2016-05-26 13:30:43 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Jonas Blue - Fast Car ft. Dakota",
+        "tags": "Jonas BlueDakota",
+        "video_id": "5yXQJBU8A28",
+        "content": "\n",
+        "link": "/watch/5yXQJBU8A28",
+        "date": "2016-05-26 12:30:43 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+
+
+    
+    ,{
+        "title": "Contato",
+        "content": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.com\n\nYou can find the source code for the Jekyll new theme at:\n\njglovier\n /\njekyll-new\n\nYou can find the source code for Jekyll at\n\njekyll\n /\njekyll\n",
+        "link": "/contato/",
+        "date": null,
+        "excerpt": null,
+        "search_omit": ""
+    }
+    
+    
+
+    
+
+    
+
+    
+    ,{
+        "title": "Todos os Vídeos",
+        "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
+        "link": "/videos/",
+        "date": null,
+        "excerpt": null,
+        "search_omit": ""
+    }
+    
+    
+
+    
+
+    
+
+    
+
+    
+    ,{
+        "title": "Tags",
+        "content": "\n  \n    \n      \n      \n        \n      \n      \n    \n  \n  \n  \n\n\n\n{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}\n\n\n{% assign tag_words = site_tags | split:',' | sort %}\n\n\n\n  {% for item in (0..site.tags.size) %}{% unless forloop.last %}\n    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}\n    \n      {{ this_word }}\n        ({{ site.tags[this_word].size }})\n      \n    \n  {% endunless %}{% endfor %}\n\n",
+        "link": "/tags/",
+        "date": null,
+        "excerpt": null,
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Todos os Vídeos",
+        "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
+        "link": "/videos/page2/",
+        "date": null,
+        "excerpt": null,
+        "search_omit": ""
+    }
+    
+    
+
 ]
