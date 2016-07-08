@@ -340,7 +340,10 @@ $(window).keydown(function (e) {
 //                    S E A R C H   E N G I N E   C A L L                    //
 //===========================================================================//
 
-SimpleJekyllSearch({
+
+
+if(idioma.toLowerCase() == "pt-br"){
+  SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: '/search.json',
@@ -349,3 +352,14 @@ SimpleJekyllSearch({
   limit: 15,
   fuzzy: true
 })
+}else{
+  SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json',
+  searchResultTemplate: '<div class="search-result-block-container focusable"><div class="search-result-block-title"><div class="row"><div class="c3"><a href="{url}"><figure><img src="http://img.youtube.com/vi/{video_id}/mqdefault.jpg"><figcaption>{title}</figcaption></figure></a></div></div></div>',
+  noResultsText: '<div class="search-result-block-container"><div class="search-result-block-title"><i class="fa fa-exclamation-triangle"></i><span>No results found.</span></div>',
+  limit: 15,
+  fuzzy: true
+})
+}
