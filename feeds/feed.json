@@ -531,7 +531,7 @@
     
     ,{
         "title": "Todos os Vídeos",
-        "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
+        "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  \n    Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  \n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
         "link": "/videos/",
         "date": null,
         "excerpt": null,
@@ -561,8 +561,8 @@
     
     ,{
         "title": "Todos os Vídeos",
-        "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
-        "link": "/videos/page2/",
+        "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  \n    Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  \n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
+        "link": "/videos/2/",
         "date": null,
         "excerpt": null,
         "search_omit": ""

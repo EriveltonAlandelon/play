@@ -483,6 +483,9 @@ main .page h1{
 main .page .pagination{
 	text-align: center;
 }
+main .page .pagination .page_number{
+	margin: 5px 0 10px 0;
+}
 main .page .pagination a{
 	border: solid 1px #d7d7d7;
     border-radius: 0.2rem;
