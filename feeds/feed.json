@@ -8,6 +8,90 @@
 
     
     {
+        "title": "Wilkinson - Afterglow (Lyrics)",
+        "tags": "Wilkinson",
+        "video_id": "7uZDFM4ND0s",
+        "content": "\n",
+        "link": "/watch/7uZDFM4ND0s",
+        "date": "2016-07-09 17:48:55 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Rihanna - We Found Love (Official Video) ft. Calvin Harris",
+        "tags": "RihannaCalvin Harris",
+        "video_id": "HxKAPkzI4o8",
+        "content": "\n",
+        "link": "/watch/HxKAPkzI4o8",
+        "date": "2016-07-09 17:38:41 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "P!nk - Just Like Fire",
+        "tags": "P!nk",
+        "video_id": "5Nrv5teMc9Y",
+        "content": "\n",
+        "link": "/watch/5Nrv5teMc9Y",
+        "date": "2016-07-09 17:32:46 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Bebe Rexha - I Can't Stop Drinking About You",
+        "tags": "Bebe Rexha",
+        "video_id": "EeBYIElpEPo",
+        "content": "\n",
+        "link": "/watch/EeBYIElpEPo",
+        "date": "2016-07-09 17:26:07 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Bebe Rexha - I'm Gonna Show You Crazy",
+        "tags": "Bebe Rexha",
+        "video_id": "kEDZZin4_eM",
+        "content": "\n",
+        "link": "/watch/kEDZZin4_eM",
+        "date": "2016-07-09 17:23:35 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Broods - L.A.F",
+        "tags": "Broods",
+        "video_id": "tNnlYyByWQQ",
+        "content": "\n",
+        "link": "/watch/tNnlYyByWQQ",
+        "date": "2016-07-09 17:20:53 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
         "title": "Hailee Steinfeld - Love Myself",
         "tags": "Hailee Steinfeld",
         "video_id": "bMpFmHSgC4Q",
@@ -689,6 +773,18 @@
         "title": "Todos os Vídeos",
         "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  \n    Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  \n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
         "link": "/videos/2/",
+        "date": null,
+        "excerpt": null,
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Todos os Vídeos",
+        "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  \n    Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  \n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
+        "link": "/videos/3/",
         "date": null,
         "excerpt": null,
         "search_omit": ""
