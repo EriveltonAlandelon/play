@@ -433,6 +433,7 @@ main .todos-os-videos a{
 	background-color: #9b59b6;
   	box-shadow: 0px 5px 0px 0px #82409D;
     text-decoration: none;
+    text-transform: lowercase;
 }
 main .todos-os-videos a:hover{
 	background-color: #B573D0;
