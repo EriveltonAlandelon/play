@@ -8,7 +8,119 @@
 
     
     {
-        "title": "Arty, Nadia Ali & BT - Must Be The Love (Official Music Video)",
+        "title": "Cheryl - Call My Name",
+        "tags": "Cheryl",
+        "video_id": "IYT6rbxNn30",
+        "content": "\n",
+        "link": "/watch/IYT6rbxNn30",
+        "date": "2016-07-17 18:27:45 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Foxes - Let Go for Tonight",
+        "tags": "Foxes",
+        "video_id": "Pecj5GGjQi8",
+        "content": "\n",
+        "link": "/watch/Pecj5GGjQi8",
+        "date": "2016-07-17 18:25:39 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Handsome Ghost - Steps (Rehearsal Video)",
+        "tags": "Handsome Ghost",
+        "video_id": "sMkk90FnC24",
+        "content": "\n",
+        "link": "/watch/sMkk90FnC24",
+        "date": "2016-07-17 18:22:57 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Fifth Harmony - Sledgehammer",
+        "tags": "Fifth Harmony",
+        "video_id": "gCJ3rmiZFr8",
+        "content": "\n",
+        "link": "/watch/gCJ3rmiZFr8",
+        "date": "2016-07-17 18:13:36 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Jack Novak - If It Kills Me ft. blackbear",
+        "tags": "Jack Novakblackbear",
+        "video_id": "eSYS4dj59xg",
+        "content": "\n",
+        "link": "/watch/eSYS4dj59xg",
+        "date": "2016-07-17 18:10:36 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Five Knives - Savages (Official Video)",
+        "tags": "Five Knives",
+        "video_id": "1H6WZ328qoE",
+        "content": "\n",
+        "link": "/watch/1H6WZ328qoE",
+        "date": "2016-07-17 18:06:50 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Jack Novak - Driving Blind ft. Bright Lights",
+        "tags": "Jack NovakBright Lights",
+        "video_id": "Ghjb_wU9-GY",
+        "content": "\n",
+        "link": "/watch/Ghjb_wU9-GY",
+        "date": "2016-07-17 18:00:46 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "David Guetta ft. Zara Larsson - This One's For You",
+        "tags": "David GuettaZara Larsson",
+        "video_id": "MoHnffhBwqs",
+        "content": "\n",
+        "link": "/watch/MoHnffhBwqs",
+        "date": "2016-07-17 17:53:56 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Arty, Nadia Ali & BT - Must Be The Love",
         "tags": "ArtyNadia AliBT",
         "video_id": "u6MLjDwiUoA",
         "content": "\n",
@@ -927,6 +1039,18 @@
         "title": "Todos os Vídeos",
         "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  \n    Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  \n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
         "link": "/videos/2/",
+        "date": null,
+        "excerpt": null,
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Todos os Vídeos",
+        "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  \n    Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  \n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
+        "link": "/videos/3/",
         "date": null,
         "excerpt": null,
         "search_omit": ""
