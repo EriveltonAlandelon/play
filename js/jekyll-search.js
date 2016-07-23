@@ -193,13 +193,13 @@ $(window).keydown(function (e) {
             var o = this,
                 i = [],
                 u = !1,
-                c = 10,
+                c = 12,
                 a = t("./SearchStrategies/fuzzy"),
                 f = t("./SearchStrategies/literal");
             o.setFuzzy = function(t) {
                 u = !!t
             }, o.setLimit = function(t) {
-                c = parseInt(t, 10) || c
+                c = parseInt(t, 12) || c
             }, o.search = function(t, e) {
                 return e ? (i.length = 0, n(t, e, r())) : []
             }
