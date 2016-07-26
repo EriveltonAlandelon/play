@@ -289,6 +289,7 @@ header nav #search-container #search-input:focus {
 	text-align: center;
 	background: #000;
 	float: left;
+	margin-bottom: 5px;
 }
 .video-container iframe{
 	max-width: 1366px;
