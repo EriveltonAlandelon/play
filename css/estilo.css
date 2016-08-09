@@ -208,7 +208,7 @@ header a.logo span{
   left: 50%;
 }
 header nav{
-	width: 72.5%;
+	width: 78.5%;
 	float: right;
 }
 header nav ul{
@@ -565,7 +565,7 @@ footer p{
 	}
 	header .logo{
 		float: none;
-		width: 238px;
+		width: 110px;
 		margin: 0 auto;
 	}
 	header .logo a{
