@@ -8,6 +8,34 @@
 
     
     {
+        "title": "Michael Mind Project - Antiheroes (Official Video HD)",
+        "tags": "Michael Mind Project",
+        "video_id": "FGSFgaNZ2AQ",
+        "content": "\n",
+        "link": "/watch/FGSFgaNZ2AQ",
+        "date": "2016-09-13 19:07:28 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Tove Lo - Habits (Stay High)",
+        "tags": "Tove Lo",
+        "video_id": "oh2LWWORoiM",
+        "content": "\n",
+        "link": "/watch/oh2LWWORoiM",
+        "date": "2016-09-13 19:03:48 -0300",
+        "excerpt": "",
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
         "title": "Lilly Wood & The Prick and Robin Schulz - Prayer In C",
         "tags": "Lilly Wood & The PrickRobin Schulz",
         "video_id": "fiore9Z5iUg",
@@ -1415,6 +1443,18 @@
         "title": "Todos os Vídeos",
         "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  \n    Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  \n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
         "link": "/videos/3/",
+        "date": null,
+        "excerpt": null,
+        "search_omit": ""
+    }
+    
+    
+
+    
+    ,{
+        "title": "Todos os Vídeos",
+        "content": "\n\n    \n      {% for post in paginator.posts %}\n      \n        \n          \n            \n            {{ post.title }}\n          \n        \n      \n      {% endfor %}\n    \n\n\n\n\n  \n    Página: {{ paginator.page }} de {{ paginator.total_pages }}\n  \n  {% if paginator.previous_page %}\n    Anterior\n  {% else %}\n    Anterior\n  {% endif %}\n  {% if paginator.next_page %}\n    Próxima\n  {% else %}\n    Próxima\n  {% endif %}\n",
+        "link": "/videos/4/",
         "date": null,
         "excerpt": null,
         "search_omit": ""
