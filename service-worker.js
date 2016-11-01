@@ -1,7 +1,7 @@
 'use strict';
 
 const PREFIX = 'play';
-const HASH = '424c85f6'; // Calculated when running `gulp`.
+const HASH = '424c85f60'; // Calculated when running `gulp`.
 const OFFLINE_CACHE = `${ PREFIX }-${ HASH }`;
 const OFFLINE_URL = '/offline/index.html';
 
@@ -25,9 +25,7 @@ self.addEventListener('install', function(event) {
         '/js/remodal.min.js',
         '/js/jquery-lang.js',
         '/js/langpack/en.json',
-        '/js/jekyll-search.js',
-        '/search.json',
-        '/feeds/feed.json'
+        '/js/jekyll-search.js'
       ]);
     })
   );
