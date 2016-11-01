@@ -10,18 +10,6 @@ self.addEventListener('install', function(event) {
     caches.open(OFFLINE_CACHE).then(function(cache) {
       return cache.addAll([
         OFFLINE_URL,
-        '/',
-        '/index.html',
-        '/tags/',
-        '/tags/index.html',
-        '/videos/',
-        '/videos/index.html',
-        '/videos/2/',
-        '/videos/2/index.html',
-        '/videos/3/',
-        '/videos/3/index.html',
-        '/videos/4/',
-        '/videos/4/index.html',
         '/css/estilo.css',
         '/img/logo.png',
         '/img/loading.jpg',
