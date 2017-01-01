@@ -24,18 +24,6 @@ self.addEventListener('fetch', function(evt) {
 function precache() {
   return caches.open(CACHE).then(function (cache) {
     return cache.addAll([
-      './',
-      './index.html',
-      './videos/',
-      './videos/index.html',
-      './videos/2/',
-      './videos/2/index.html',
-      './videos/3/',
-      './videos/3/index.html',
-      './videos/4/',
-      './videos/4/index.html',
-      './tags/',
-      './tags/index.html',
       './css/estilo.css',
       './img/logo.png',
       './img/loading.jpg',
