@@ -341,7 +341,8 @@ $(window).keydown(function (e) {
 //===========================================================================//
 
 
-
+  if (navigator.userAgent.indexOf("Google Page Speed") == -1) {
+    setTimeout(function() {
 if(idioma.toLowerCase() == "pt-br"){
   SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
@@ -363,3 +364,5 @@ if(idioma.toLowerCase() == "pt-br"){
   fuzzy: true
 })
 }
+    }, 200);
+  }
